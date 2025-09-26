@@ -58,7 +58,10 @@ class HomePage extends StatelessWidget {
     final bloc = context.read<CounterBloc>();
 
     return Scaffold(
+<<<<<<< HEAD
       // fondo degradado ciberpunk.
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -77,7 +80,10 @@ class HomePage extends StatelessWidget {
         ),
         child: Stack(
           children: [
+<<<<<<< HEAD
             // elementos decorativos neon (circulos suaves).
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
             Positioned(
               right: -100,
               top: -80,
@@ -106,14 +112,20 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+<<<<<<< HEAD
 
             // contenido principal.
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
             Center(
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     const SizedBox(height: 32),
+<<<<<<< HEAD
                     // título con glow.
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                     Text(
                       'Actividad 2 - Gestor de estados',
                       style: TextStyle(
@@ -130,8 +142,11 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 46),
+<<<<<<< HEAD
 
                     // panel central estilo 'glass / neon card'.
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                     Container(
                       margin: const EdgeInsets.symmetric(horizontal: 20),
                       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 22),
@@ -187,7 +202,10 @@ class HomePage extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(height: 10),
+<<<<<<< HEAD
                               // valor con estilo neon.
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                               Text(
                                 '${state.value}',
                                 style: TextStyle(
@@ -217,8 +235,11 @@ class HomePage extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(height: 22),
+<<<<<<< HEAD
 
                               // botones con estilo futurista.
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -228,7 +249,10 @@ class HomePage extends StatelessWidget {
                                     width: 64,
                                   ),
                                   const SizedBox(width: 14),
+<<<<<<< HEAD
                                   // reset con estilo diferente (accent purple).
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                                   Container(
                                     width: 110,
                                     decoration: BoxDecoration(
@@ -267,7 +291,10 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ],
                               ),
+<<<<<<< HEAD
 
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                               const SizedBox(height: 22),
                               Text(
                                 'Eventos: Incrementar, Decrementar, Reiniciar.',
@@ -281,10 +308,14 @@ class HomePage extends StatelessWidget {
                         },
                       ),
                     ),
+<<<<<<< HEAD
 
                     const SizedBox(height: 40),
 
                     // pie con iconos y efectos neon.
+=======
+                    const SizedBox(height: 40),
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -299,7 +330,10 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+<<<<<<< HEAD
 
+=======
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
                     const SizedBox(height: 80),
                   ],
                 ),

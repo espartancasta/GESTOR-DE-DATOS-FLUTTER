@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'blocs/counter_bloc.dart';
+<<<<<<< HEAD
 import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
+=======
+import 'pages/splash_page.dart';
+
+void main() {
+  runApp(
+    BlocProvider(
+      create: (_) => CounterBloc(maxValue: 5, minValue: -5),
+      child: const MyApp(),
+    ),
+  );
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
 }
 
 class MyApp extends StatelessWidget {
@@ -13,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+<<<<<<< HEAD
       debugShowCheckedModeBanner: false, // 👈 ESTA LÍNEA QUITA EL CARTEL "DEBUG"
       title: 'Actividad 2 - BLoC',
       theme: ThemeData(
@@ -22,6 +35,12 @@ class MyApp extends StatelessWidget {
         create: (_) => CounterBloc(maxValue: 5, minValue: -5),
         child: const HomePage(),
       ),
+=======
+      debugShowCheckedModeBanner: false,
+      title: 'Actividad 2 - BLoC',
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      home: const SplashPage(),
+>>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
     );
   }
 }
