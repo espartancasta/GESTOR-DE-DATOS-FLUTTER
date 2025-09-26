@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "337796922523",
+    "project_id": "gestor-de-datos-b590a",
+    "storage_bucket": "gestor-de-datos-b590a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337796922523:android:b7b2db66204007124c1a3e",
+        "android_client_info": {
+          "package_name": "com.example.gestor_de_datos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM-Z7S0ntk5FcL-kvsnXy40-MmsA-3KK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

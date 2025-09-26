@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:firebase_core/firebase_core.dart'; // 🔹 Firebase
 import 'blocs/counter_bloc.dart';
-<<<<<<< HEAD
-import 'pages/home_page.dart';
-
-void main() {
-  runApp(const MyApp());
-=======
 import 'pages/splash_page.dart';
+import 'firebase_options.dart'; // 🔹 generado por FlutterFire CLI
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // 🔹 necesario para async antes de runApp
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  ); // 🔹 inicializa Firebase según la plataforma
+
   runApp(
     BlocProvider(
       create: (_) => CounterBloc(maxValue: 5, minValue: -5),
       child: const MyApp(),
     ),
   );
->>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
 }
 
 class MyApp extends StatelessWidget {
@@ -25,22 +25,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-<<<<<<< HEAD
-      debugShowCheckedModeBanner: false, // 👈 ESTA LÍNEA QUITA EL CARTEL "DEBUG"
-      title: 'Actividad 2 - BLoC',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
-      home: BlocProvider(
-        create: (_) => CounterBloc(maxValue: 5, minValue: -5),
-        child: const HomePage(),
-      ),
-=======
       debugShowCheckedModeBanner: false,
-      title: 'Actividad 2 - BLoC',
+      title: 'Actividad 2 - BLoC con Firebase',
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: const SplashPage(),
->>>>>>> b882050 ( GESTOR CON 2 ESTADOS)
     );
   }
 }
